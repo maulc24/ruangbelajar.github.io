@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+<!--unicons-->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+
+<nav class="nav__container" id="home">
+  <div class="nav__content">
+    <a href="#home" class="nav__logo">RuangBelajar</a>
+    <div class="mobile-nav">
+      <i class="uil uil-bars"></i>
+    </div>
+  </div>
+  <div class="nav__menu">
+    <ul>
+      <li class="nav__item">
+        <a href="index.html" class="nav__link">Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="course.html" class="nav__link">Course</a>
+      </li>
+      <li class="nav__item">
+        <a href="event.html" class="nav__link">Event</a>
+      </li>
+      <li class="nav__item">
+        <a href="about.html" class="nav__link">About</a>
+      </li>
+      <button class="btn-sign">Sign-In</button>
+    </ul>
+  </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+  $(document).ready(function(){
+  $(".mobile-nav i").click(function(){
+    $(".nav__menu").toggleClass("mobile__menu")
+  });
+})
+</script>
